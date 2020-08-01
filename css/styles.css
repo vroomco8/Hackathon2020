@@ -1,0 +1,63 @@
+.nav-bar ul {
+  font-size: 30px;
+ font-family: 'Grenze Gotisch', cursive;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4f81c7;
+  text-align: center;
+}
+
+.nav-bar li {
+float: center;
+display: inline-block;
+}
+
+li a {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #b0deff;
+}
+
+p{
+  font-family: 'Grenze Gotisch', cursive;
+}
+
+.head {
+       height: 100px;
+       font-size: 40px;
+       text-align: center;
+       padding: 25px;
+       Font-family: 'Grenze Gotisch', cursive;
+       background-color: lightblue;
+       margin: 0px;
+      }
+.subhead {
+       background-color: black;
+       color: white;
+       height: 25px;
+       text-align:center;
+       margin: 0px;
+       font-size: 14pt;
+       padding: 15px;
+       }
+.about {
+       float: right;
+       width: 200px;
+       height: 200px;
+       font-size: 14pt;
+       border: 5px solid black;
+       background-color: lightgreen;
+       text-align: center;
+       padding: 50px;
+       }
+.body {
+       float:center;
+      }
