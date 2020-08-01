@@ -50,7 +50,7 @@ p{
        }
 .about {
        float: right;
-       width: 200px;
+       width: 400px;
        height: 200px;
        font-size: 14pt;
        border: 5px solid black;
@@ -66,5 +66,5 @@ p{
        height: 200px;
        border: 5px solid black;
        padding: 50px;
-       
+
       }
