@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Login or Sign Up</title>
+    <link rel="stylesheet" href="css/logincss.css">
+  </head>
+  <body>
+    <div id = "login_div"class="Authentication">
+
+    </div>
+    <div class="login-box">
+      <div class="left-box">
+        <h1>Sign Up!</h1>
+        <input type="email" class="input-box" placeholder="Email" />
+        <input type="password" class="input-box" placeholder="Enter Password" />
+        <input type="password" class="input-box" placeholder="Re-enter password" />
+        <button type="button" name="button">Sign up to account</button>
+      </div>
+      <div class="right-box">
+        <span class = "right-title">Login</span>
+        <input type="username" class="input-box" placeholder="Username">
+        <input type="email" class = "input-box" id="email-field" placeholder="Email" />
+        <input type="password" class = "input-box" id="password-field" placeholder="Enter Password" />
+        <button onclick = "login()">Login to account</button>
+      </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBPzvxhvl5cGBfxkTTvHkcJ2sqMB5LIyOU",
+        authDomain: "byte-hacks-hackathon-2020.firebaseapp.com",
+        databaseURL: "https://byte-hacks-hackathon-2020.firebaseio.com",
+        projectId: "byte-hacks-hackathon-2020",
+        storageBucket: "byte-hacks-hackathon-2020.appspot.com",
+        messagingSenderId: "390174809584",
+        appId: "1:390174809584:web:d4a5f4c5735d5afca71135"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src = "index.js">
+
+    </script>
+  </body>
+
+
+</html>
