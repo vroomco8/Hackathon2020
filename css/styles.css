@@ -76,12 +76,27 @@ p{
 
       }
 /* Create three equal columns that floats next to each other */
-.twocolumn {
-      float: left;
-      width: 50%;
+.twocolumna {
+      float:left;
+      width: 40%;
       height: 300px;
       background-color: lightblue
+      padding: 50px;
+      margin: 25px;
+      border: 5px solid black;
+      text-align: center;
       }
+
+.twocolumnb {
+      float: right;
+      width: 40%;
+      height: 300px;
+      background-color: lightblue
+      padding: 50px;
+      margin: 25px;
+      border: 5px solid black;
+      text-align: center;
+            }
 
       /* Clear floats after the columns */
 .row:after {
@@ -92,7 +107,7 @@ p{
 
       /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
-    .twocolumn {
+    .twocolumna, twocolumnb {
           width: 100%;
         }
       }
