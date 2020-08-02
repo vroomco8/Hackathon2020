@@ -118,3 +118,9 @@ p{
      width: 100%;
       }
     }
+    .right {
+      float: right;
+    }
+    input[type="button"] {
+       background-color: pink;
+      }
