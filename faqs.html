@@ -5,6 +5,7 @@
     <title>News</title>
   </head>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/functions.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grenze+Gotisch&family=Lobster&family=Noto+Sans+JP:wght@500&family=Playfair+Display+SC:ital@1&display=swap" rel="stylesheet">
   <body>
 
@@ -26,20 +27,33 @@
       </div>
       </center>
     </div>
-    <div style="background-color:lightgreen; width: 33%; height: 200px; float: left; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
+    <div style="background-color:lightgreen; width: 30%; height: 200px; float: left; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
       <p style="font-size:16pt"> What is the use of this website? </p>
       <p> Why should you share your brilliant ideas with other people? 2 reasons: we want the world to know about other people's ideas and make them better. 2. We want tohe world to progress faster with everyone knowing about technologies. </p>
     </div>
-    <div style="background-color:lightgreen; width: 33%; height: 200px; float: right; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
-      <p style="font-size:16pt"> What is the use of this website? </p>
-      <p> Why should you share your brilliant ideas with other people? 2 reasons: we want the world to know about other people's ideas and make them better. 2. We want tohe world to progress faster with everyone knowing about technologies. </p>
+    <div style="background-color:lightgreen; width: 30%; height: 200px; float: right; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
+      <p style="font-size:16pt"> How do we post something on this website? </p>
+      <p> First, take a photo of your innovation. Then, upload it to this website. Press [PUBLISH] to post it onto our website. People from anywhere can now comment on your photo. After posting, If you change your mind, press on your photo to remove it. </p>
     </div>
-    <div style="background-color:lightgreen; width: 33%; height: 200px; float: left; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
-      <p style="font-size:16pt"> What is the use of this website? </p>
-      <p> Why should you share your brilliant ideas with other people? 2 reasons: we want the world to know about other people's ideas and make them better. 2. We want tohe world to progress faster with everyone knowing about technologies. </p>
+    <div style="background-color:lightgreen; width: 30%; height: 200px; float: left; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
+      <p style="font-size:16pt"> Have a question? </p>
+      <p style="font-size:12pt; font-style:bold;">Type your question here!</p>
+  <input type="text" id="box" value="Type here to add question"/>
+  <br/>
+  <input type="button" value="Add item" onclick="addItem();"/>
+  <br/>
+  <div id="list"></div>
     </div>
-    <div style="background-color:lightgreen; width: 33%; height: 200px; float: right; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
-      <p style="font-size:16pt"> What is the use of this website? </p>
-      <p> Why should you share your brilliant ideas with other people? 2 reasons: we want the world to know about other people's ideas and make them better. 2. We want tohe world to progress faster with everyone knowing about technologies. </p>
+    <div style="background-color:lightgreen; width: 30%; height: 200px; float: right; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
+      <p style="font-size:16pt"> Have a question? </p>
+      <p style="font-size:12pt; font-style:bold;">Type your question here!</p>
+  <input type="text" id="box" value="Type here to add question"/>
+  <br/>
+  <input type="button" value="Add item" onclick="addItem();"/>
+  <br/>
+  <div id="list"></div>
     </div>
-    <img src="https://mcalmont.files.wordpress.com/2014/04/169774354_c5fd6769c9_b.jpg" width="15%" margin="15px">
+    <div style="margin: 30px">
+      <img src="https://mcalmont.files.wordpress.com/2014/04/169774354_c5fd6769c9_b.jpg" width="175px" >
+      <img src="https://farm4.staticflickr.com/3122/2387033212_ba5c6e306b_z.jpg" width="175px" >
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/0d/30/07/shakespeare-monument.jpg" width="175px" >
