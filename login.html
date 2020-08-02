@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
     <meta charset="utf-8">
     <title>Login or Sign Up</title>
-    <link rel="stylesheet" href="css/logincss.css">
-  </head>
-  <body>
-    <div id = "login_div"class="Authentication">
-
-    </div>
-    <div class="login-box">
-      <div class="left-box">
-        <h1>Sign Up!</h1>
-        <input type="email" class="input-box" placeholder="Email" />
-        <input type="password" class="input-box" placeholder="Enter Password" />
-        <input type="password" class="input-box" placeholder="Re-enter password" />
-        <button type="button" name="button">Sign up to account</button>
-      </div>
-      <div class="right-box">
-        <span class = "right-title">Login</span>
-        <input type="username" class="input-box" placeholder="Username">
-        <input type="email" class = "input-box" id="email-field" placeholder="Email" />
-        <input type="password" class = "input-box" id="password-field" placeholder="Enter Password" />
-        <button onclick = "login()">Login to account</button>
-      </div>
-    </div>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyBPzvxhvl5cGBfxkTTvHkcJ2sqMB5LIyOU",
-        authDomain: "byte-hacks-hackathon-2020.firebaseapp.com",
-        databaseURL: "https://byte-hacks-hackathon-2020.firebaseio.com",
-        projectId: "byte-hacks-hackathon-2020",
-        storageBucket: "byte-hacks-hackathon-2020.appspot.com",
-        messagingSenderId: "390174809584",
-        appId: "1:390174809584:web:d4a5f4c5735d5afca71135"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-    <script src = "index.js">
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src = "redoindex.js">
 
     </script>
-  </body>
+  </head>
+  <link rel="stylesheet" href="css/logincss.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grenze+Gotisch&family=Lobster&family=Noto+Sans+JP:wght@500&family=Playfair+Display+SC:ital@1&display=swap" rel="stylesheet">
+
+  <body>
+    <div id="formContainer">
+      <input type="email" placeholder="email" id="email">
+      <input type="password" placeholder="password" id="password">
+      <button onclick = "signUp()" id = "signUp">Sign Up</button>
+      <button onclick = "signIn()" id = "signIn">Sign In</button>
+      <button onclick = "signOut()" id = "signOut">Sign Out</button>
+    </div>
+    <div id = "website"class="Intro">
+      <center>
+      <h1 class = "head">ReBirth....</h1>
+      <div class="nav-bar">
+
+          <center>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="art.html">Art</a></li>
+              <li><a href="science.html">Science</a></li>
+              <li><a href="collaborate.html">Collaborate</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+
+
+           </ul>
+          </center>
+
+      </div>
+      <p class = "subhead"> Share Your ideas with Innovators around the World!!!</p>
+    <div class="row">
+      <div style = "background-color:lightyellow; width: 30%; height: 200px; float: left; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
+        <h2>Welcome!</h2>
+        <h5> Welcome to ReBirth, the site where you can explore the new and latest wonderful pieces of art, explore research into new inventions and technology while collaborating with other intelligent minds, and more!</h5>
+      </div>
+      <div style = "background-color:lightyellow; width: 30%; height: 200px; float: right; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
+        <h2>About:</h2>
+        <h5>Using this website, you can see other people’s ideas. You can also post your own ideas! From beautiful paintings to genius blueprints, all you have to do is post your idea! Also, it's really easy. First, decide what you want to share. Your art or your ideas. For your art, go to the Art page. For your ideas, go to the Science page. Upload an image of what you want, then press the [PUBLISH] button. We hope to see all your genius ideas! </h5>
+      </div>
+    </div>
+    </center>
+    <hr>
+      <div style = "background-color:lightyellow; width: 90%; height: 100px; float: right; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
+        <h1>Interested in Art?</h1>
+        <h4>Interested in these beautiful artworks? Visit the Art Page to post your own art or comment on other peoples art!</h4>
+      </div>
+    <hr>
+    <div style = "background-color: lightyellow; width: 90%; height: 100px; float: right; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
+      <h1>Interested in Science?</h1>
+      <h4>Interested in scientific discoveries and inventions? Visit the Science Page to post your own discoveries/ideas/inventions or comment on other people's discoveries/ideas!</h4>
+    </div>
+    <hr>
+    <footer>
+      <p>Creator Team: Varun C, Vishnu C, Neha P</p>
+    </footer>
+    </div>
+
+  </div>
+</body>
 
 
 </html>
