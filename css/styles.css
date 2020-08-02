@@ -79,6 +79,8 @@ p{
 .twocolumn {
       float: left;
       width: 50%;
+      height: 300px;
+      background-color: lightblue
       }
 
       /* Clear floats after the columns */
@@ -102,11 +104,15 @@ p{
       /* Left and right column */
 .column.side {
       width: 25%;
+      height: 300px;
+      background-color: lightgreen;
       }
 
       /* Middle column */
 .column.middle {
       width: 75%;
+      height: 300px;
+      background-color: pink;
       }
 
       /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
