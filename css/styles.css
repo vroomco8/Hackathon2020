@@ -78,3 +78,6 @@ p{
 .right {
   float: right;
 }
+input[type="button"] {
+   background-color: pink;
+  }
