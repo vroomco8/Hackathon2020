@@ -35,7 +35,7 @@
       <p style="font-size:16pt"> How do we post something on this website? </p>
       <p> First, take a photo of your innovation. Then, upload it to this website. Press [PUBLISH] to post it onto our website. People from anywhere can now comment on your photo. After posting, If you change your mind, press on your photo to remove it. </p>
     </div>
-    <div style="background-color:lightgreen; width: 30%; height: 200px; float: left; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
+    <div style="background-color:lightgreen; width: 87%; height: 200px; float: right; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
       <p style="font-size:16pt"> Have a question? </p>
       <p style="font-size:12pt; font-style:bold;">Type your question here!</p>
   <input type="text" id="box" value="Type here to add question"/>
@@ -43,17 +43,11 @@
   <input type="button" value="Add item" onclick="addItem();"/>
   <br/>
   <div id="list"></div>
-    </div>
-    <div style="background-color:lightgreen; width: 30%; height: 200px; float: right; padding: 50px; margin: 25px; border: 5px solid black; text-align: center;">
-      <p style="font-size:16pt"> Have a question? </p>
-      <p style="font-size:12pt; font-style:bold;">Type your question here!</p>
-  <input type="text" id="box" value="Type here to add question"/>
-  <br/>
-  <input type="button" value="Add item" onclick="addItem();"/>
-  <br/>
-  <div id="list"></div>
+  <script>
+    if(localStorage.storedList) {
+     loadList();
+    }
+</script>
     </div>
     <div style="margin: 30px">
       <img src="https://mcalmont.files.wordpress.com/2014/04/169774354_c5fd6769c9_b.jpg" width="175px" >
-      <img src="https://farm4.staticflickr.com/3122/2387033212_ba5c6e306b_z.jpg" width="175px" >
-      <img src="https://media-cdn.tripadvisor.com/media/photo-s/06/0d/30/07/shakespeare-monument.jpg" width="175px" >
