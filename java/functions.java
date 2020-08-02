@@ -18,3 +18,6 @@ function addItem() {
     list.children[i].onclick = removeItem;
    }
   }
+  if(localStorage.storedList) {
+   loadList();
+  }
