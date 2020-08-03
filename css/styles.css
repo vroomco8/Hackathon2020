@@ -1,3 +1,8 @@
+.h1{
+  font-family: 'Grenze Gotisch', cursive;
+}
+
+
 .nav-bar ul {
   font-size: 30px;
  font-family: 'Grenze Gotisch', cursive;
@@ -24,6 +29,34 @@ text-decoration: none;
 
 li a:hover:not(.active) {
 background-color: #b0deff;
+}
+
+.Sections-of-collaboration ul {
+  font-size: 90px;
+ font-family: 'Grenze Gotisch', cursive;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f7d6bf;
+  text-align: center;
+}
+
+.Sections-of-collaboration li {
+float: center;
+display: inline-block;
+}
+
+.Sections-of-collaboration li a {
+display: inline-block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.Sections-of-collaboration li a:hover:not(.active) {
+background-color: #810000;
 }
 
 p{
