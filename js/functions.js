@@ -21,14 +21,26 @@ function addItem() {
   function addImage() {
       var img = new Image();
       var description = document.createElement("div")
-      description.innerHTML = document.getElementById("Description").value;
+      var userid = document.getElementById("UserID").value;
+      var descrp_txt = document.getElementById("Description").value;
+      if (userid == ''){
+          description.innerHTML = descrp_txt;
+        }
+      else{
+          description.innerHTML = userid + ' says ' + descrp_txt;
+        }
       img.src = document.getElementById("imageURL").value;
       img.height = 400
+
       description.style.float = "right";
-      description.style.backgroundColor = "lightyellow"
+      description.style.backgroundColor = "white"
       description.style.height  = "400px"
       description.style.width = "400px"
       description.style.textAlign = "center"
+      description.style.border = "solid black"
+      img.style.border = "solid black"
       document.getElementById('body').appendChild(img);
-      document.getElementById('body').appendChild(description)
+
+      document.getElementById('body').appendChild(description);
+
     }
