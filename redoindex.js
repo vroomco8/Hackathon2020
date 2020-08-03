@@ -54,12 +54,14 @@
     document.getElementById("website").style.display = "initial";
     document.getElementById("formContainer").style.display = "initial";
     document.getElementById("fancyTitle").style.display = "none";
+    document.getElementById("nav-bar").style.display = "initial";
     // User is signed in.
   } else {
     document.getElementById("website").style.display = "none";
     document.getElementById("formContainer").style.display = "initial";
     document.getElementById("fancyTitle").style.display = "initial";
-
+    document.getElementById("nav-bar").style.display = "none";
+    document.getElementById("website").style.display = "initial";
     // No user is signed in.
   }
 });
