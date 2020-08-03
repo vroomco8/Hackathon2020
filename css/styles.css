@@ -72,8 +72,13 @@ iframe {
           background-color:white;
           width: 87%;
           height: 100px;
+<<<<<<< HEAD
           float: Middle;
           padding: 0px;
+=======
+          float: right;
+          padding: 25px;
+>>>>>>> cae5ea7127902c0c2d66301bf189ec07734e28f7
           margin: 25px;
           border: 5px solid black;
           text-align: center;
